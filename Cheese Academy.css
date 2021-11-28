@@ -1,0 +1,303 @@
+
+.body{
+    font-family: "MS Pゴシック";
+    width: 1200px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.top{/*親div*/
+    position: relative; /*相対配置*/
+}
+
+.top img{width:100%;}
+
+.top span{
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*文字の場所を中央に調整*/
+    margin: 0; /*余白だった気がする*/
+    font-family: sans-serif;
+    font-size: 45px; 
+    text-align: center; 
+  }
+
+.top p{
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap; /*文字を一行で表示*/
+    font-weight: lighter;
+}
+
+/*ここからABOUTの説明*/
+.a{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffd61a;
+    text-align: center;   /*センターに文字を揃える*/
+}
+
+.b{
+    font-size: 18px;
+    color: #222222;
+    text-align: center;
+}
+.c{
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    white-space: pre;   /*改行で折り返す*/
+}
+
+/*ここは横並び４枚の画像？多分もうわかんないわ*/
+
+.flex_test-box1{
+    font-family: sans-serif;
+    padding: 10px;  /*余白指定*/
+    display: flex;
+    align-items: stretch;
+    justify-content:flex-end;
+}
+.flex_test-item1{
+    padding: 10px;
+    color: black;
+    margin: 21px;
+    width: 50px;
+}
+
+.flex_test-item2{
+    color: black;
+    margin: 21px;
+    text-align:center;
+    white-space:pre; 
+}
+
+.flex_test-item3{
+    color: black;
+    margin: 21px;
+    text-align:center;
+    white-space:pre;
+}
+
+/*ここはCOURSEの説明*/
+.d{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffd61a;
+    text-align: center;   /*センターに文字を揃える*/
+}
+
+.e{
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    white-space: pre;   /*改行で折り返す*/
+}
+
+.container {
+    display: flex; /*横並び*/
+    flex-direction: row; /*左から右に配置*/
+    flex-wrap: wrap; /*折り返して上から下へ*/
+   }
+   
+.item1{
+    flex: 1 0 auto; /*均等幅で配置できるらしい*/
+    width: auto;
+    height: auto;
+    flex-basis:40%; /*子要素の大きさ*/
+    align-self:stretch; /*子要素の垂直揃え*/
+}
+
+.item-title2{
+    flex: 1;
+    width: auto;
+    height: auto;
+    flex-basis:40%; /*子要素の大きさ*/
+    align-self:stretch; /*子要素の垂直揃え*/
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.item-body2{
+    flex: 1;
+    width: auto;
+    height: auto;
+    flex-basis:40%; /*子要素の大きさ*/
+    align-self:stretch; /*子要素の垂直揃え*/
+    background-color: #fafafa;
+    white-space: pre;   /*改行で折り返す*/
+    text-align: center;
+    line-height: auto; /*heightと同じ値を入力することで高さも真ん中に*/
+    font-size: 16px;
+    font-family: "MS Pゴシック";
+}
+
+.item-title3{
+    flex: 1;
+    width: auto;
+    height: auto;
+    flex-basis:40%; /*子要素の大きさ*/
+    align-self:stretch; /*子要素の垂直揃え*/
+    background-color:#fafafa;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.item-body3{
+    flex: 1;
+    width: auto;
+    height: auto;
+    flex-basis:40%; /*子要素の大きさ*/
+    align-self:stretch; /*子要素の垂直揃え*/
+    background-color: #fafafa;
+    white-space: pre;   /*改行で折り返す*/
+    text-align: center;
+    line-height: auto; /*heightと同じ値を入力することで高さも真ん中に*/
+    font-size: 16px;
+    font-family: "MS Pゴシック";
+}
+
+.item4{
+    flex: 1;
+    width: auto;
+    height: auto;
+    flex-basis:40%; /*子要素の大きさ*/
+    align-self:stretch; /*子要素の垂直揃え*/
+}
+
+.item5{
+    flex: 1;
+    width: auto;
+    height: auto;
+    flex-basis:40%; /*子要素の大きさ*/
+    align-self:stretch; /*子要素の垂直揃え*/
+    
+}
+
+.item-title6{
+    flex: 1;
+    width: auto;
+    height: auto;
+    flex-basis:40%; /*子要素の大きさ*/
+    align-self:stretch; /*子要素の垂直揃え*/
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.item-body6{
+    flex: 1;
+    width: auto;
+    height: auto;
+    flex-basis:40%; /*子要素の大きさ*/
+    align-self:stretch; /*子要素の垂直揃え*/
+    background-color: #fafafa;
+    white-space: pre;   /*改行で折り返す*/
+    text-align: center;
+    line-height: auto; /*heightと同じ値を入力することで高さも真ん中に*/
+    font-size: 16px;
+    font-family: "MS Pゴシック";
+
+}
+
+/*ここからNEWSの説明*/
+.f{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffd61a;
+    text-align: center;   /*センターに文字を揃える*/
+}
+
+.g{
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    white-space: pre;   /*改行で折り返す*/
+}
+
+/*ここは3枚横並びの画像*/
+.flex-container{
+    display: flex;
+}
+
+.image-wrap{
+    margin: 10px 5px;
+}
+
+.image-wrap img{
+    width: 100%;
+    height: 300px;
+}
+
+.flex-item{
+    flex-basis: 100%;
+}
+
+/*ここからAccessの説明*/
+.h{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffd61a;
+    text-align: center;   /*センターに文字を揃える*/
+    background-color: #fafafa;
+}
+
+.i{
+    font-size: 18px;
+    color: #222222;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.hoge{
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.j{
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    white-space: pre;   /*改行で折り返す*/ 
+    background-color: #fafafa;
+}
+
+.k{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffd61a;
+    text-align: center;   /*センターに文字を揃える*/
+}
+
+.l{
+    font-size: 18px;
+    color: #222222;
+    text-align: center;
+}
+
+.m{
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    white-space: pre;   /*改行で折り返す*/ 
+}
+
+/*ここはフッター*/
+.footer{
+    width:auto;
+    height: 80px;
+    background-color: #707070;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 80px; /*heightと同じ値を入力することで高さも真ん中に*/  
+}
