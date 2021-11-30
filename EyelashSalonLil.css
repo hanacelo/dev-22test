@@ -1,0 +1,339 @@
+body{
+    width: 1200px;
+    min-height: 100vh; /*全画面表示*/
+    background-size: cover;
+    background-color: #FFFFBB;
+}
+
+.flex_test-box{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    padding: auto;
+    font-family: "Courier New";
+    font-size: 25px;
+    height: 100px;
+    background-color: #FFFFBB;
+}
+
+.flex_test-item{
+    color: #333333;
+    padding: auto;
+    margin: auto;
+}
+
+.title{/*親div*/
+    position: relative; /*相対配置*/
+}
+
+.title img{
+    width:100%;
+}
+
+.title span{
+    position: absolute;/*絶対配置*/
+    top: 60%;
+    left: 20%;
+    transform: translate(-30%,-50%); /*文字の場所を中央に調整*/
+    margin: 0; /*余白だった気がする*/
+    font-family: "Courier New";
+    font-size: 45px;
+    text-align: center;
+    color: #333333;
+    font-weight: bolder; /*文字を一段階太くする*/
+}
+
+.information{
+    margin-top: 10px;
+
+}
+
+.information h1{
+    font-size: 40px;
+    font-family: "Courier New";
+    text-align: left;
+    background-color: #D7EEFF;
+    font-weight: lighter;
+}
+
+.information h2{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    white-space: pre;
+    text-align: center;
+    line-height:2;
+    padding: 0px;
+    margin-bottom: -20px;
+}
+
+.information p{
+    font-size: 18px;
+    font-family: sans-serif;
+    white-space: pre;
+    text-align: center;
+    line-height:2; /*行間の設定。単位入れない方がいいらしい*/
+    margin-top: -10px; /*余白消したいときはmarginをマイナスで*/
+}
+
+.about h1{
+    font-size: 40px;
+    font-family: "Courier New";
+    text-align: left;
+    background-color: #D7EEFF;
+    font-weight: lighter; /*文字細くする*/
+}
+
+.about h2{
+    font-size: 18px;
+    font-family: sans-serif;
+    white-space: pre;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: -20px;
+}
+
+.about p{
+    font-size: 18px;
+    font-family: sans-serif;
+    white-space: pre;
+    text-align: center;
+    line-height: 2;
+    margin-top: -10px;
+}
+
+.menu h1{
+    font-size: 40px;
+    font-family: "Courier New";
+    text-align: left;
+    background-color: #D7EEFF;
+    font-weight: lighter;
+}
+
+.menulist{
+    width: 800px;
+    margin-left: 200px; /*フレックスボックスの中央寄せ*/
+}
+
+.container1{
+    display: flex;
+    flex-direction: row; /*左から右に配置*/
+}
+
+.container1 img{
+    width: 50%;
+    background-color:white;
+    object-fit: contain;
+}
+
+.item1{
+    display: flex;
+    width:50%;
+    font-size: 20px;
+    background-color: #FFD5EC;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row; /*左から右に配置*/
+}
+
+.item2{
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    background-color: #FFD5EC;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 img{
+    width: 50%;
+    object-fit: contain;
+}
+
+.container3{
+    display: flex;
+    flex-direction: row; /*左から右に配置*/
+}
+
+.container3 img{
+    display: flex;
+    width: 50%;
+}
+
+.item3{
+    display: flex;
+    width: 50%;
+    height: auto;
+    font-size: 20px;
+    background-color: #FFD5EC;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4{
+    display: flex;
+    flex-direction: row; /*左から右に配置*/
+}
+
+.item4{
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    background-color: #FFD5EC;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.item4 p{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container4 img{
+    width: 50%;
+    font-size: 30px;
+    background-color: #FFD5EC; 
+}
+
+/*ここからフォーム*/
+.resavation p{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.contact-table{
+    width:70%;
+    margin: bottom 20px;
+    align-content: center;
+    margin: 15px auto;
+}
+
+.contact-item,
+.contact-body{
+    padding: 20px;
+    border:1px solid #ccc; /*フォームの線の色*/
+    background-color: ; /*テキストボックスのフォームじゃないとこの色*/
+}
+
+.contact-item{
+    text-align: left;
+    width: 30%;
+    background-color: #eee; /*フォームの左のとこの色*/
+}
+
+.contact-body{
+    width: 100%;
+}
+
+.form-text{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /*フォームのテキストボックスの線の色*/
+    appearance: none;         /*PCによって異なるスタイルになるのを解除*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 400px;
+}
+
+.contact-sex + .contact-sex {
+    margin-left: 10px;
+}
+
+.contact-sex-txt {
+    margin-left: 5px;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /*どこの色かまじでわからん*/
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-submit {
+    width: 250px;
+    background-color: #333; /*送信ボックスの色*/
+    color: #fff; /*送信ボックスの文字の色*/
+    font-weight: bold;
+    display: block;
+    margin: 15px auto;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 100vh;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    
+  }
+
+.SNS h1{
+    font-size: 40px;
+    font-family: "Courier New";
+    text-align: left;
+    background-color: #D7EEFF;
+    font-weight: lighter;
+}
+
+blockquote{
+    padding: 30px;
+}
+
+.hoge{
+    background-color:#FFFFBB;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.resavation h1{
+    font-size: 40px;
+    font-family: "Courier New";
+    text-align: left;
+    background-color: #D7EEFF;
+    font-weight: lighter;
+}
+
+.access h1{
+    font-size: 40px;
+    font-family: "Courier New";
+    text-align: left;
+    background-color: #D7EEFF;
+    font-weight: lighter;
+}
+
+.access h2{
+    text-align: center;
+    white-space: pre;
+    font-size: 18px;
+    margin-bottom: -20px;
+}
+
+.access p{
+    text-align: center;
+    white-space: pre;
+    font-size: 18px;
+    line-height: 2;
+    margin-top: -5px;
+}
+
+.footer{
+    background-color: #D7EEFF;
+    height: 100px;
+    text-align: center;
+    line-height: 100px; /*heightと同じ値を入れることで中央揃え*/
+}
