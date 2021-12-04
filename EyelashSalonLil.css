@@ -2,7 +2,13 @@ body{
     width: 1200px;
     min-height: 100vh; /*全画面表示*/
     background-size: cover;
-    background-color: #FFFFBB;
+    background-color: white;
+    margin: auto;
+}
+
+.back{width: 1200px;
+    margin: auto;
+    background-color: white;
 }
 
 .flex_test-box{
@@ -13,7 +19,7 @@ body{
     font-family: "Courier New";
     font-size: 25px;
     height: 100px;
-    background-color: #FFFFBB;
+    background-color: #FAFAD2;
 }
 
 .flex_test-item{
@@ -44,16 +50,17 @@ body{
 }
 
 .information{
-    margin-top: 10px;
+    padding-top: 50px;
 
 }
 
 .information h1{
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Courier New";
-    text-align: left;
-    background-color: #D7EEFF;
+    text-align: center;
+    background-color: ;
     font-weight: lighter;
+    height: 55px;
 }
 
 .information h2{
@@ -63,8 +70,16 @@ body{
     white-space: pre;
     text-align: center;
     line-height:2;
-    padding: 0px;
+    padding-top: -10px; /*余白*/
     margin-bottom: -20px;
+    padding-top: 40px;
+    width: 1000px;
+    margin:0 auto; /*枠の中央寄せのために適用*/
+
+    border: solid; /*枠線を見える化*/
+    border-color: #FAFAD2;
+    background-color: #FFFFF0;
+    
 }
 
 .information p{
@@ -74,13 +89,18 @@ body{
     text-align: center;
     line-height:2; /*行間の設定。単位入れない方がいいらしい*/
     margin-top: -10px; /*余白消したいときはmarginをマイナスで*/
+    margin-bottom: -10px;
+}
+
+.about{
+    padding-top: 150px;
 }
 
 .about h1{
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Courier New";
-    text-align: left;
-    background-color: #D7EEFF;
+    text-align: center;
+    background-color: ;
     font-weight: lighter; /*文字細くする*/
 }
 
@@ -90,7 +110,16 @@ body{
     white-space: pre;
     text-align: center;
     line-height: 2;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
+    padding-top: 40px;
+    width: 1000px;
+    margin:0 auto; /*枠の中央寄せのために適用*/
+
+    border: solid; /*枠線を見える化*/
+    border-color: #FAFAD2;
+    background-color: #FFFFF0;
+    position: relative;
+
 }
 
 .about p{
@@ -100,13 +129,19 @@ body{
     text-align: center;
     line-height: 2;
     margin-top: -10px;
+    font-weight: lighter;
+    margin-bottom: -20px;
+
+}
+.menu{
+    padding-top: 150px;
 }
 
 .menu h1{
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Courier New";
-    text-align: left;
-    background-color: #D7EEFF;
+    text-align: center;
+    background-color: ;
     font-weight: lighter;
 }
 
@@ -130,7 +165,7 @@ body{
     display: flex;
     width:50%;
     font-size: 20px;
-    background-color: #FFD5EC;
+    background-color: #FAFAD2;
     object-fit: contain;
     justify-content: center;
     align-items: center;
@@ -145,7 +180,7 @@ body{
     display: flex;
     width: 50%;
     font-size: 20px;
-    background-color: #FFD5EC;
+    background-color: #FAFAD2;
     object-fit: contain;
     justify-content: center;
     align-items: center;
@@ -171,7 +206,7 @@ body{
     width: 50%;
     height: auto;
     font-size: 20px;
-    background-color: #FFD5EC;
+    background-color: #FAFAD2;
     justify-content: center;
     align-items: center;
 }
@@ -185,7 +220,7 @@ body{
     display: flex;
     width: 50%;
     font-size: 20px;
-    background-color: #FFD5EC;
+    background-color: #FAFAD2;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
@@ -200,10 +235,27 @@ body{
 .container4 img{
     width: 50%;
     font-size: 30px;
-    background-color: #FFD5EC; 
+    background-color: #FAFAD2; 
 }
 
 /*ここからフォーム*/
+.resavation{
+    padding-top: 150px;
+}
+.resavation h1{
+    font-size: 60px;
+}
+
+.form{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border: solid;
+    border-color: #FAFAD2;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #FFFFF0;
+}
+
 .resavation p{
     font-size: 20px;
     font-family: sans-serif;
@@ -211,7 +263,7 @@ body{
 }
 
 .contact-table{
-    width:70%;
+    width:90%;
     margin: bottom 20px;
     align-content: center;
     margin: 15px auto;
@@ -282,11 +334,15 @@ body{
     
   }
 
+.SNS{
+    padding-top: 150px;
+}
+
 .SNS h1{
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Courier New";
-    text-align: left;
-    background-color: #D7EEFF;
+    text-align: center;
+    background-color: ;
     font-weight: lighter;
 }
 
@@ -295,24 +351,38 @@ blockquote{
 }
 
 .hoge{
-    background-color:#FFFFBB;
+    background-color:;
     text-align: center;
     padding-top: 20px;
 }
 
 .resavation h1{
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Courier New";
-    text-align: left;
-    background-color: #D7EEFF;
+    text-align: center;
+    background-color: ;
     font-weight: lighter;
 }
 
+.map{
+    border: solid;
+    border-color: #FAFAD2;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #FFFFF0;
+    padding-top: 40px;
+}
+
+.access{
+    padding-top: 150px;
+}
+
 .access h1{
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Courier New";
-    text-align: left;
-    background-color: #D7EEFF;
+    text-align: center;
+    background-color: ;
     font-weight: lighter;
 }
 
@@ -321,6 +391,7 @@ blockquote{
     white-space: pre;
     font-size: 18px;
     margin-bottom: -20px;
+    margin-top: 50px;
 }
 
 .access p{
@@ -329,11 +400,13 @@ blockquote{
     font-size: 18px;
     line-height: 2;
     margin-top: -5px;
+    padding-bottom: 50px;
 }
 
 .footer{
-    background-color: #D7EEFF;
+    background-color: #FAFAD2;
     height: 100px;
     text-align: center;
     line-height: 100px; /*heightと同じ値を入れることで中央揃え*/
+    margin-top: 100px;
 }
