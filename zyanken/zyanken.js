@@ -7,7 +7,7 @@ alert("hahaha");
       const gu = Math.floor(Math.random()*3);
        console.log(gu,"ランダムな数を表示");
 
-       var hatena;
+       let result;
        if(gu === 0){
         result ='<img src = "images/gu.png"></img>' + "あいこ"; 
 
@@ -25,7 +25,7 @@ alert("hahaha");
        const choki = Math.floor(Math.random()*3);
        console.log(choki,"aiteの手をランダムで表示");
 
-       var hatena;
+       let result;
        if(choki === 0 ){
         result ='<img src = "images/gu.png"></img>' +"負け";
 
@@ -42,7 +42,7 @@ alert("hahaha");
        const pa = Math.floor(Math.random()*3);
        console.log(pa,"aiteの手をランダムで表示");
 
-       var hatena;
+       let result;
        if(pa === 0){
         result ='<img src = "images/gu.png"></img>' + "勝ち";
 
