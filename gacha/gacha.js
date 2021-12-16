@@ -1,104 +1,108 @@
+alert("hahaha");
+
+let result = $('#result');
+let namae = $('#namae');
 
 //召喚ボタンを押すと乱数での抽選が行われる
 $("#button").on('click',function(){
     let gacha = Math.floor(Math.random()*20);
     console.log(gacha,"ランダムな数字")
 
-    if(gacha = 0){
-         result === '<img src = "images/kento_nakazima.jpeg" width="500" height="auto" text-align="center"></img>';
-     }else if(gacha = 1){
-        result === '<img src = "images/mahiro_takasugi.jpeg" width="500" height="auto" text-align="center"></img>';
-    }else if(gacha = 2){
-        result = '<img src = "images/masaki_suda.jpeg"></img>';
-    }else if(gacha = 3){
-        result === '<img src = "images/ryo_narita.jpeg"></img>';
-    }else if(gacha = 4){
-        result === '<img src = "images/kento_yamazaki.jpeg"></img>';
-    }else if(gacha = 5){
-        result === '<img src = "images/ryo_yoshizawa.jpeg"></img>';
-    }else if(gacha = 6){
-        result === '<img src = "images/ryunosuke_kamiki.jpeg"></img>';
-    }else if(gacha = 7){
-        result === '<img src = "images/shun_oguri.jpeg"></img>';
-    }else if(gacha = 8){
-        result === '<img src = "images/sosuke_ikematsu.jpeg"></img>';
-    }else if(gacha = 9){
-        result === '<img src = "images/tomohisa_yamashita.jpeg"></img>';
-    }else if(gacha = 10){
-        result === '<img src = "images/tatsuya_fuziwara.jpeg"></img>';
-    }else if(gacha = 11){
-        result === '<img src = "images/yosuke_kuboduka.jpeg"></img>';
-    }else if(gacha = 12){
-        result === '<img src = "images/yudai_chiba.jpeg"></img>';
-    }else if(gacha = 13){
-        result === '<img src = "images/daiki_tsuneta.jpeg"></img>';
-    }else if(gacha = 14){
-        result === '<img src = "images/eiji_akaso.jpeg"></img>';
-    }else if(gacha = 15){
-        result === '<img src = "images/go_ayano.jpeg"></img>';
-    }else if(gacha = 16){
-        result === '<img src = "images/humiya_takahashi.jpeg"></img>';
-    }else if(gacha = 17){
-        result === '<img src = "images/keita_machida.jpeg"></img>';
-    }else if(gacha = 18){
-        result === '<img src = "images/akihisa_shiono.jpeg"></img>';
-    }else if(gacha = 19){
-        result === '<img src = "images/takayuki_yamada.jpeg"></img>';
+    if(gacha === 0){
+        result.html('<img src = "images/kento_nakazima.jpeg" width="500" height="auto" text-align="center" id="1"></img>') + namae.html("山崎賢人");
+     }else if(gacha === 1){
+        result.html('<img src = "images/mahiro_takasugi.jpeg" width="500" height="auto" text-align="center" id="2"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 2){
+        result.html('<img src = "images/masaki_suda.jpeg" width="500" height="auto" text-align="center" id="3"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 3){
+        result.html('<img src = "images/ryo_narita.jpeg" width="500" height="auto" text-align="center" id="4"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 4){
+        result.html('<img src = "images/kento_yamazaki.jpeg" width="500" height="auto" text-align="center" id="5"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 5){
+        result.html('<img src = "images/ryo_yoshizawa.jpeg" width="500" height="auto" text-align="center" id="6"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 6){
+        result.html('<img src = "images/ryunosuke_kamiki.jpeg" width="500" height="auto" text-align="center" id="7"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 7){
+        result.html('<img src = "images/shun_oguri.jpeg" width="500" height="auto" text-align="center" id="8"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 8){
+        result.html('<img src = "images/sosuke_ikematsu.jpeg" width="500" height="auto" text-align="center" id="9"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 9){
+        result.html('<img src = "images/tomohisa_yamashita.jpeg" width="500" height="auto" text-align="center" id="10"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 10){
+        result.html('<img src = "images/tatsuya_fuziwara.jpeg" width="500" height="auto" text-align="center" id="11"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 11){
+        result.html('<img src = "images/yosuke_kuboduka.jpeg" width="500" height="auto" text-align="center" id="12"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 12){
+        result.html('<img src = "images/yudai_chiba.jpeg" width="500" height="auto" text-align="center" id="13"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 13){
+        result.html('<img src = "images/daiki_tsuneta.jpeg" width="500" height="auto" text-align="center" id="14"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 14){
+        result.html('<img src = "images/eiji_akaso.jpeg" width="500" height="auto" text-align="center" id="15"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 15){
+        result.html('<img src = "images/go_ayano.jpeg" width="500" height="auto" text-align="center" id="16"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 16){
+        result.html('<img src = "images/humiya_takahashi.jpeg" width="500" height="auto" text-align="center" id="17"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 17){
+        result.html('<img src = "images/keita_machida.jpeg" width="500" height="auto" text-align="center" id="18"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 18){
+        result.html('<img src = "images/akihisa_shiono.jpeg" width="500" height="auto" text-align="center" id="19"></img>') + namae.html("山崎賢人");
+    }else if(gacha === 19){
+        result.html('<img src = "images/takayuki_yamada.jpeg" width="500" height="auto" text-align="center" id="20"></img>') + namae.html("山崎賢人");
     }
-
-    // $("h2").html(result).val;
-    // console.log(result, "ガチャの結果");
-
+ 
 });
 
-//ガチャ画面に表示する
 
-let result = [
-    {"title":"山崎賢人","img":"images/kento_yamazaki.jpeg"},
-    {"title":"山崎賢人","img":"images/mahiro_takasugi.jpeg"},
-    {"title":"山崎賢人","img":"images/masaki_suda.jpeg"},
-    {"title":"山崎賢人","img":"images/ryo_narita.jpeg"},
-    {"title":"山崎賢人","img":"images/ryo_yoshizawa.jpeg"},
-    {"title":"山崎賢人","img":"images/ryunosuke_kamiki.jpeg"},
-    {"title":"山崎賢人","img":"images/shun_oguri.jpeg"},
-    {"title":"山崎賢人","img":"images/sosuke_ikematsu.jpeg"},
-    {"title":"山崎賢人","img":"images/tatsuya_fuziwara.jpeg"},
-    {"title":"山崎賢人","img":"images/tomohisa_yamashita.jpeg"},
-    {"title":"山崎賢人","img":"images/yosuke_kuboduka.jpeg"},
-    {"title":"山崎賢人","img":"images/yudai_chiba.jpeg"},
-    {"title":"山崎賢人","img":"images/daiki_tsuneta.jpeg"},
-    {"title":"山崎賢人","img":"images/eiji_akaso.jpeg"},
-    {"title":"山崎賢人","img":"images/go_ayano.jpeg"},
-    {"title":"山崎賢人","img":"images/humiya_takahashi.jpeg"},
-    {"title":"山崎賢人","img":"images/keita_machida.jpeg"},
-    {"title":"山崎賢人","img":"images/kento_nakazima.jpeg"},
-    {"title":"山崎賢人","img":"images/akihisa_shiono.jpeg"},
-    {"title":"山崎賢人","img":"images/takayuki_yamada.jpeg"},
-];
+setTimeout(function(){
+    $('#result').fadeOut("slow",function(){
+        $(result).appendTo('#result').hide().fadeIn(2000);
 
-$("#button").on('click',function(){
-    //ここなくてもいいんよねえ
-    
-    
-    //召喚中画面が再生され終わったら消え、結果表示用の画面が出る
+    })});
+
     setTimeout(function(){
-        $('#result').fadeOut("slow",function(){
-            $('#result').html(""); //これでresultから結果発表を消す
-            $('<img src="images/result.jpeg" width="500" height="auto">').appendTo('#result').hide().fadeIn(2000);
-            $('<p>ガチャ結果</p>').appendTo('#try');
+        $('#namae').fadeOut("slow",function(){
+            $(namae).appendTo('#namae').hide().fadeIn(2000);
+    
+        })});    
 
-        })
-})});
+// $("#button").on('click',function(){    
+//     //召喚中画面が再生され終わったら消え、結果表示用の画面が出る
+//     setTimeout(function(){
+//         $('#result').fadeOut("slow",function(){
+//             $('<img src="images/result.jpeg" width="500" height="auto">').appendTo('#try').hide().fadeIn(1000);
+          
+//         })});
+
+//         //ここより上は動いてるっぽい
+
+//     setTimeout(function(){
+//         $('#result').html("");
+//         $('#result').fadeOut("slow",function(){
+//             $(result).appendTo('#try').hide().fadeIn(1000);
+//         })});
+    
+
+//保存を押すと、listにカードを出す
 
 
 //ここからゲットしたカードをlistに保存
 
-$("#button").on("click",function(){
+$("#save").on("click",function(){
     //valの記述
-    const key = $("#result").val();
-    console.log(key, "#result");
+    let key = $("#namae").val();
+    console.log(key, namae);
 
-    localStorage.setItem(key,result) ;
+    localStorage.setItem(key,namae);
+
+    const html =`
+
+        <p>${key}</p>
+    `;
+    // htmlに表示＝jQueryで処理をしたものをhtmlに埋め込む
+    $("#namae").append(html);
+});
+
+
 
 //2.clear クリックイベント
 //localStorageの中身削除はとりあえず無視
@@ -111,4 +115,4 @@ for(let i =0; i<localStorage.length; i++){
     //htmlにjQueryで取得したものを表示
     const html =`<div id="list">${key}</div>`;
     $("#list").append(html);
-}});
+};

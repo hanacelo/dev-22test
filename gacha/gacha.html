@@ -10,7 +10,8 @@
 <body background="images/haikei.jpeg">
     <h1>ピックアップ★イケメンガチャ</h1>
 
-    <div id="result"><!--ここに枠を作って引いたカードを表示-->
+    <div id="result"><!--ここに枠を作って引いたカードを表示--></div>
+    <div id ="namae"><!--ここに枠を作って引いたカードの名前を表示--></div>
 
         <div id="retsu">
             <p id="shokan">聖晶石召喚</p>
@@ -20,12 +21,15 @@
         <div id="ikemen">今日のイケメンピックアップ召喚</div>
         <button id="button" img="">召喚</button>
 
-    </div>
+        <ul>
+            <li id="save">保存</li>
+            <li id="clear">削除</li>
+        </ul>
 
-    <div id="try"></div>
 
-    <div id="list"></div>
-    <!--ここに票を作って引いたカードをはめていく-->
+
+    <div id="list"><!--ここに票を作って引いたカードをはめていく--></div>
+    
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="gacha.js"></script>

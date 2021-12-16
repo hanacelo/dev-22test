@@ -68,3 +68,8 @@ h4{
     text-shadow: 0 0 10px  #5507FF;
     
 }
+
+li:hover {
+    background: #0d7dfd;
+    color: #fff;
+  }
