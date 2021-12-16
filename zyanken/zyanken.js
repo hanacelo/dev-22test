@@ -9,13 +9,13 @@ alert("hahaha");
 
        var hatena;
        if(gu === 0){
-        $("h1").html('<img src = "images/gu.png"></img>' + "あいこ"); 
+        result ='<img src = "images/gu.png"></img>' + "あいこ"; 
 
        }else if(gu === 1){
-        $("h1").html('<img src ="images/choki.png"></img>' + "勝ち");
+        result ='<img src ="images/choki.png"></img>' + "勝ち";
 
         }else if(gu === 2){
-            $("h1").html('<img src="images/pa.png"></img>' + "負け");
+            result ='<img src="images/pa.png"></img>' + "負け";
         
         }});
 
@@ -27,13 +27,13 @@ alert("hahaha");
 
        var hatena;
        if(choki === 0 ){
-        $("h1").html('<img src = "images/gu.png"></img>' +"負け")
+        result ='<img src = "images/gu.png"></img>' +"負け";
 
        }else if(choki === 1){
-        $("h1").html('<img src ="images/choki.png"></img>' + "引き分け")
+        result ='<img src ="images/choki.png"></img>' + "引き分け";
 
        }else if(choki === 2){
-        $("h1").html('<img src="images/pa.png"></img>' + "勝ち")
+        result ='<img src="images/pa.png"></img>' + "勝ち";
         }});
 
 
@@ -44,14 +44,14 @@ alert("hahaha");
 
        var hatena;
        if(pa === 0){
-        $("h1").html('<img src = "images/gu.png"></img>' 
-        + "勝ち")
+        result ='<img src = "images/gu.png"></img>' + "勝ち";
 
        }else if(pa === 1){
-        $("h1").html('<img src ="images/choki.png"></img>' 
-        + "負け")
+        result = '<img src ="images/choki.png"></img>' + "負け";
 
        }else if(pa === 2){
-           $("h1").html('<img src="images/pa.png"></img>' 
-           + "引き分け")
+           result = '<img src="images/pa.png"></img>' + "引き分け")
         }});
+
+$("#janken").html(result); //htmlにresultを表示させる
+
